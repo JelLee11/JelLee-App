@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<resources>
+<color name="colorPrimary">#0D253F</color>
+<color name="colorPrimaryDark">#0D253F</color>
+<color name="colorAccent">#01B4E4</color>
+<color name="colorControlNormal">#01B4E4</color>
+<color name="colorControlHighlight">#BBDEFB</color>
+<color name="colorTextPrimary">#FAFAFA</color>
+<color name="colorTextSecondary">#E0E0E0</color>
+<color name="colorBackgroundPrimary">#0D253F</color>
+<color name="colorBackgroundSecondary">#90CEA1</color>
+<color name="colorBackgroundVariant">#092b4f</color>
+<color name="colorBackgroundOpacity">#CC0D253F</color>
+</resources>

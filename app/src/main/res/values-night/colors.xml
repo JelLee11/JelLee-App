@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<resources>
+<color name="colorPrimary">#111129</color>
+<color name="colorPrimaryDark">#111129</color>
+<color name="colorBackgroundPrimary">#111129</color>
+<color name="colorBackgroundVariant">#1D193B</color>
+<color name="colorAccent">#9F76FB</color>
+<color name="colorControlNormal">#9F76FB</color>
+<color name="colorControlHighlight">#C1AEF3</color>
+<color name="colorTextPrimary">#E6DFEC</color>
+<color name="colorTextSecondary">#8B869B</color>
+<color name="colorBackgroundOpacity">#CC111129</color>
+</resources>

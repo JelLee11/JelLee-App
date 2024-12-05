@@ -1,0 +1,209 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|center_vertical"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="Main Publisher"
+							android:textSize="14sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_bold" />
+						<TextView
+							android:id="@+id/textview2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="8dp"
+							android:text="Default publisher display on homepage"
+							android:textSize="11sp"
+							android:textColor="@color/colorTextSecondary"
+							android:fontFamily="@font/opensans_regular" />
+					</LinearLayout>
+					<Spinner
+						android:id="@+id/spinner1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:spinnerMode="dropdown"
+						android:popupBackground="@drawable/dialog_bg" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|center_vertical"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="Libray Sorting"
+							android:textSize="14sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_bold" />
+						<TextView
+							android:id="@+id/textview4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="8dp"
+							android:text="Default sort list on library"
+							android:textSize="11sp"
+							android:textColor="@color/colorTextSecondary"
+							android:fontFamily="@font/opensans_regular" />
+					</LinearLayout>
+					<Spinner
+						android:id="@+id/spinner2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:spinnerMode="dropdown"
+						android:popupBackground="@drawable/dialog_bg" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|center_vertical"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear7"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview5"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="Reader Provider"
+							android:textSize="14sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_bold" />
+						<TextView
+							android:id="@+id/textview6"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="8dp"
+							android:text="Default reader app"
+							android:textSize="11sp"
+							android:textColor="@color/colorTextSecondary"
+							android:fontFamily="@font/opensans_regular" />
+					</LinearLayout>
+					<Spinner
+						android:id="@+id/spinner3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:spinnerMode="dropdown"
+						android:popupBackground="@drawable/dialog_bg" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="left|center_vertical"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear9"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1">
+						<TextView
+							android:id="@+id/textview7"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="Servers"
+							android:textSize="14sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_bold" />
+						<TextView
+							android:id="@+id/textview8"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:paddingBottom="8dp"
+							android:text="Default server"
+							android:textSize="11sp"
+							android:textColor="@color/colorTextSecondary"
+							android:fontFamily="@font/opensans_regular" />
+					</LinearLayout>
+					<Spinner
+						android:id="@+id/spinner4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:spinnerMode="dropdown"
+						android:popupBackground="@drawable/dialog_bg" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

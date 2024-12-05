@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+		<item name="android:colorPrimary">@color/colorPrimary</item>
+		<item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="android:colorAccent">@color/colorAccent</item>
+		<item name="android:colorControlHighlight">@color/colorControlHighlight</item>
+		<item name="android:colorControlNormal">@color/colorControlNormal</item>
+		<item name="android:windowBackground">@color/colorBackgroundPrimary</item>
+       <item name="android:textColor">@color/colorTextPrimary</item>
+       <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+       <item name="android:statusBarColor">@color/colorBackgroundPrimary</item>
+       <item name="android:windowLightStatusBar">false</item>
+       <item name="android:fontFamily">@font/opensans_medium</item>
+       <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+       <item name="bottomNavigationStyle">@style/Widget.Material3.BottomNavigationView.ActiveIndicator</item>
+	</style>
+	
+   <style name="Widget.Material3.BottomNavigationView.ActiveIndicator" parent="">
+        <item name="android:width">@dimen/m3_bottom_nav_item_active_indicator_width</item>
+        <item name="android:height">30dp</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="marginHorizontal">@dimen/m3_bottom_nav_item_active_indicator_margin_horizontal</item>
+        <item name="activeIndicatorShape">@drawable/activeIndicatorShape</item>
+    </style>
+</resources>

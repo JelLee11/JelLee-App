@@ -1,0 +1,170 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+			android:id="@+id/swiperefreshlayout1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<androidx.core.widget.NestedScrollView
+				android:id="@+id/vscroll1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<LinearLayout
+					android:id="@+id/linear_main"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="15dp"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="Search"
+							android:textSize="20sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_semibold" />
+						<TextView
+							android:id="@+id/textview2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingRight="8dp"
+							android:paddingBottom="8dp"
+							android:text="Search for your favorite novels"
+							android:textSize="12sp"
+							android:textColor="@color/colorTextSecondary"
+							android:fontFamily="@font/opensans_regular" />
+						<LinearLayout
+							android:id="@+id/linear3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:padding="10dp"
+							android:gravity="left|center_vertical"
+							android:orientation="horizontal">
+							<ImageView
+								android:id="@+id/imageview1"
+								android:layout_width="20dp"
+								android:layout_height="20dp"
+								android:src="@drawable/icon_search"
+								android:scaleType="fitXY"
+								android:tint="@color/colorTextSecondary" />
+							<EditText
+								android:id="@+id/searchField"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:paddingLeft="8dp"
+								android:background="@android:color/transparent"
+								android:gravity="left|center_vertical"
+								android:textSize="14sp"
+								android:textColor="@color/colorTextPrimary"
+								android:hint="Search Novels"
+								android:textColorHint="@color/colorTextSecondary"
+								android:singleLine="true"
+								android:imeOptions="actionSearch"
+								android:fontFamily="@font/opensans_regular" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="left|center_vertical"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/imageview2"
+							android:layout_width="17dp"
+							android:layout_height="17dp"
+							android:src="@drawable/icon_label"
+							android:scaleType="fitXY"
+							android:tint="@color/colorAccent" />
+						<com.google.android.flexbox.FlexboxLayout
+							android:id="@+id/flexBox"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:layout_weight="1"
+							app:flexDirection="row"
+							app:flexWrap="wrap"
+							app:justifyContent="flex_start" />
+						<ImageView
+							android:id="@+id/imageview3"
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							android:src="@drawable/icon_filter_list"
+							android:scaleType="fitXY"
+							android:tint="@color/colorAccent" />
+					</LinearLayout>
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/recyclerview1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1" />
+					<ProgressBar
+						android:id="@+id/progressbar1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:indeterminate="false"
+						style="?android:progressBarStyle" />
+					<LinearLayout
+						android:id="@+id/linear_error"
+						android:layout_width="match_parent"
+						android:layout_height="400dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="vertical">
+						<TextView
+							android:id="@+id/textview3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:text="( T - T )"
+							android:textSize="30sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_semibold" />
+						<TextView
+							android:id="@+id/textview_error"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingTop="8dp"
+							android:paddingRight="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Erro text"
+							android:textSize="14sp"
+							android:textColor="@color/colorTextPrimary"
+							android:fontFamily="@font/opensans_semibold" />
+					</LinearLayout>
+				</LinearLayout>
+			</androidx.core.widget.NestedScrollView>
+		</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

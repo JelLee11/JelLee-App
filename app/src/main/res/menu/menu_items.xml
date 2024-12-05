@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icon_home_round"
+        android:title="@string/home" />
+        
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/icon_local_library_outline" 
+        android:title="@string/library" />
+        
+    <item
+        android:id="@+id/nav_download"
+        android:icon="@drawable/icon_download_outline" 
+        android:title="@string/download" />
+        
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/icon_more_horiz_outline" 
+        android:title="@string/more" />
+
+</menu>
